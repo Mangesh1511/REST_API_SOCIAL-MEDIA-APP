@@ -42,6 +42,20 @@ router.delete("/:id", async (req, res) => {
       res.status(500).json(err);
     }
   });
+//Search a Post
+router.get("/:id",async(req,res)=>{
+  try{
+    const post=await Post.findById(req.params.id);
+    if(post!==null)
+    res.status(200).json(post);
+    else res.status(404).json('No such post here\n');
+  }
+  catch(err)
+  {
+    console.log(err);
+    res.status(403).json('No Posts Found');
+  }
+})  
 //like a post
 router.put("/:id/like", async (req, res) => {
     try {
@@ -62,15 +76,17 @@ router.put("/:id/like", async (req, res) => {
  router.put('/:id/comment',async(req,res)=>{
     try
     {
+      console.log(req.params.id);
         const post = await Post.findById(req.params.id); 
-        // console.log(post);       
+
+        console.log(post);       
         await post.updateOne({$push:{comments:req.body.comment}});
         res.status(200).json('Your comment has been added');
 
     }catch(err)
     {
         console.log(err);
-        res.status(404).json('error');
+        res.status(404).json('error os something vague');
     }
     
  })

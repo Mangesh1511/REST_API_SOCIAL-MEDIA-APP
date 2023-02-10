@@ -16,7 +16,13 @@ const postRoute=require('./routes/posts');
 app.use(express.json());
 app.use(helmet());
 app.use(morgan('common'));
+const axios = require('axios')
+app.use(express.static('views'));
+app.set('view engine', 'ejs')
 
+app.get('/',(req,res)=>{
+    res.render('index',{username:"mangesh"});
+})
 app.use('/api/users', userRoute);
 app.use('/api/auth',authRoute);
 app.use('/api/posts',postRoute);

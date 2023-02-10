@@ -1,0 +1,348 @@
+* {
+  Box-Sizing: Border-Box;
+}
+Body {
+
+  Width:100%;
+  Height:100%;
+  Font-Family: Sans-Serif;
+}
+
+.Flex-Row > Img {
+  Width: 25px;
+  Height: 25px;
+}
+
+.Flex-Row {
+  Display: Flex;
+  Align-Items: Center;
+}
+
+.Label-Wrapper {
+  Margin: 0px 20px;
+}
+
+.Insta-Writing {
+  Padding: 0px 15px;
+}
+
+.Menu {
+  Border-Right: 2px Solid #F5F5F5;
+  Height: 100%;
+  Width: 330px;
+  Background-Color: #F5F5F5;
+  Overflow:hidden;
+  Min-Width:330px;
+  
+}
+
+.Profil-Img {
+  Background-Image: Url("Https://M.Media-Amazon.Com/Images/M/MV5BOTIxNTE2NTQ3Nl5BMl5BanBnXkFtZTcwMzMwOTk2Nw@@._V1_UY1200_CR85,0,630,1200_AL_.Jpg");
+  Width: 100px;
+  Height: 100px;
+  Background-Size: Cover;
+  Border-Radius: 50%;
+  Border: 0.1em Solid #Eb2d53;
+  Margin: Auto;
+  Margin-Top: 30px;
+  Box-Shadow: Inset 0px 0px 0px 5px White;
+}
+
+.Profil-Info {
+  Text-Align: Center;
+  
+}
+.City {
+  Color: Grey;
+  Font-Weight: Normal;
+}
+
+.Numbers{
+  Display: Flex;
+  Justify-Content: Space-Between;
+  Padding: 0 20px;
+}
+
+P{
+  Font-Weight: Bold;
+}
+
+.Post-Num {
+  Color: Grey;
+  Font-Weight: Normal;
+ 
+}
+
+.Feed-Writing {
+  Color: #F82867;
+  
+}
+
+.Icons {
+  Display: Flex;
+  Align-Items: Center; 
+  Margin-Top:15px;
+
+}
+
+.Menu-Elements {
+  Padding: 20px 15px;
+  Color:#A0A0A0;
+  Font-Size:1.1em;
+  Font-Weight: Normal;
+}
+
+.Icons > Img {
+  Margin: 0px 25px 5px;
+  
+}
+
+.Right-Page{
+ Margin-Top:10px;
+Flex:1;
+
+}
+
+.Container{
+  Display:flex;
+  Width:100%;
+}
+
+.SearchIcon{
+  Background-Position:5px 5px;
+  Padding:0 45px;
+  Position:absolute;
+   Z-Index:2;
+
+}
+.Micro{
+  Background-Position:5px 5px;
+  Right:0;
+  Position:absolute;
+  Z-Index:2;
+  
+
+}
+
+.Has-Search .Text {
+  Padding-Left: 30px;
+  Margin-Left:35px;
+  
+}
+.Form{
+  Position:relative;
+  Z-Index:2;
+  Display:inline-Flex;
+  Align-Items:center;
+  
+}
+.Text{
+  Border:1px Solid #Ddd;
+  Border-Radius:4px;
+  Width:280px;
+  Height:30px;
+  Background-Color:#F8F8F8;
+
+}
+.Post-New{
+  Border:1px Solid Pink;
+  Width:190px;
+  Height:30px;
+  Background-Color:	#Ee4466;
+  Border-Radius:4px;
+  Color:white;
+
+  Text-Align:center;
+  Font-Size:17px;
+  Position:relative;
+}
+.Top-Bar{
+  Display:flex;
+  Align-Items:center;
+  
+}
+.Plus{
+ Right:0;
+  Position:absolute;
+  Margin-Top:2px;
+
+}
+
+.Mail-Heart{
+  Display:flex;
+  Margin:0 40px ;
+  Align-Items:center;
+}
+.Person-Radius > Img{
+  Width:30px;
+  Height:30px;
+  Border-Radius:50%;
+  Background-Size:cover;
+  
+}
+
+.Icon1{
+  Margin-Right:20px;
+}
+
+.Hr-New{
+Margin-Top:30px;
+Border: 0.5px Solid #Ddd;
+}
+
+.Featured{
+  Display:flex;
+  Justify-Content:space-Between;
+ 
+}
+
+.Right-Middle{
+ Display:flex;
+  Flex-Wrap:wrap;
+  Padding:0 20px;
+  Width:100%;
+  Flex-Direction:column;
+
+
+}
+
+.Right-Of-Page{
+  Display:flex;
+  Justify-Content:space-Between;
+
+}
+
+.Right-Right{
+  Max-Width:250px;
+}
+
+.Popular-Stor{
+  Width:150px;
+  Height:30px;
+  Border-Radius:3px; 
+  Border:1px Solid 	#E0E0E0;
+  Color:#C0C0C0;
+  Background-Color:#F8F8F8;
+  Font-Weight:600;
+  Font-Size:14px;
+ 
+}
+
+.Last-Right > Img{
+Padding:0 10px;
+Max-Width:100%;
+Background-Size:cover;
+Border-Radius:20px;
+}
+
+.Last-Right{
+ Width:25%;
+}
+.Name2{
+ Text-Align:center;
+}
+.Cover-Post{
+ Margin-Left:auto;
+}
+.Galery-Wrapper{
+  Display:inline-Flex;
+ 
+
+}
+.Img-Galery > Img{
+  Width: 100%;
+  Height:100%;
+  Padding:0 5px;
+  Object-Fit: Cover;
+  Border-Radius:10px; 
+  Margin-Top:-10px;
+  
+
+  
+}
+
+.Featured-Stories{
+  Width: 50%;
+  Margin: 0;
+}
+
+.Featured {
+  Display:flex;
+  Flex-Wrap:wrap;
+  Flex-Direction: Column;
+  
+}
+
+.Featured-Header, .Featured-Body {
+  Display:flex;
+  Flex-Direction: Row;
+
+  
+}
+.Featured-Header{
+  Justify-Content:space-Between;
+}
+
+.Icon-Two{
+  Display:flex;
+  Width:60px;
+  Justify-Content:space-Between;
+}
+
+.Last-Body{
+  Margin-Top:10px;
+}
+
+.Follows{
+   Display: Flex;
+  Justify-Content: Space-Between;
+  Padding: 0 10px;
+}
+.Read{
+  Font-Weight:bold;
+  Color:#282828;
+}
+.Read-Me{
+  Margin-Top:15px;
+   Color: Grey;
+}
+
+.Post2{
+Padding:15px 0 0 0;
+}
+
+
+.Loader {
+    Width: 3rem;
+    Height: 3rem;
+    Border: 0.6rem Solid #999;
+    Border-Bottom-Color: Transparent;
+    Border-Radius: 50%;
+    Margin: 0 Auto;
+    Animation: Loader 500ms Linear Infinite;
+}
+
+@Keyframes Loader {
+    To {
+        Transform: Rotate(360deg);
+    }
+}
+@Media  (Max-Width: 840px){
+
+  .Last-Right{
+    Display:none;
+  }
+   .Menu{
+    Display:none;
+  }
+  .Galery-Wrapper{
+    Display:flex;
+    Flex-Wrap:wrap;
+  }
+  .Top-Bar{
+    Display:none;
+  }
+  .Img-Galery{
+    Margin-Bottom:10px;
+  }
+}

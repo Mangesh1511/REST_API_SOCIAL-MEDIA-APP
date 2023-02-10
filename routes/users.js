@@ -88,7 +88,17 @@ router.put('/:id/follow',async(req,res)=>{
     try{
 
       const user=await User.findById(req.params.id);
+      if(user==null||user===undefined)
+      {
+        console.log(err);
+        res.status(404).json('user not found');
+      }
       const currentuser=await User.findById(req.body.userId);
+      if(currentuser==null||currentuser==undefined)
+      {
+        console.log(err);
+        res.status(404).json('please register with us !');
+      }
       if(!user.followers.includes(req.body.userId))
       {
         await user.updateOne({$push:{followers:req.body.userId}});
@@ -118,8 +128,20 @@ router.put('/:id/unfollow',async(req,res)=>{
     try{
 
       const user=await User.findById(req.params.id);
+      console.log('here1\n');
+      if(user==null||user===undefined)
+      {
+        console.log(err);
+        res.status(404).json('user not found');
+      }
       const currentuser=await User.findById(req.body.userId);
-      if(currentuser.following.includes(req.params.id))
+      console.log('here1\n');
+      if(currentuser==null||currentuser==undefined)
+      {
+        // console.log(err);
+        res.status(404).json('please register with us !');
+      }
+      else if(currentuser.following.includes(req.params.id))
       {
         await currentuser.updateOne({$pull:{following:req.params.id}});
         await user.updateOne({$pull:{followers:req.body.userId}});
@@ -127,7 +149,7 @@ router.put('/:id/unfollow',async(req,res)=>{
       }
       else
       {
-        res.status(403).json('You are not following him already');
+        res.status(403).json('You are not following him ');
       }
     }
     catch(err)
